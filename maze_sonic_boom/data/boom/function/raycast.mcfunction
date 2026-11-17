@@ -1,0 +1,3 @@
+particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1 force
+execute as @e[tag=!boom_shooter,type=!minecraft:item,type=!minecraft:experience_orb,type=!minecraft:armor_stand,type=!minecraft:item_frame,type=!minecraft:glow_item_frame,type=!minecraft:painting,distance=..1.5] run damage @s 10 minecraft:sonic_boom by @p[tag=boom_shooter]
+execute positioned ^ ^ ^1 if entity @p[tag=boom_shooter,distance=..15] run function boom:raycast

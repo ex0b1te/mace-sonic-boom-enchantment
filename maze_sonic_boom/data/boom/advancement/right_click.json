@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "use_mace": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:mace",
+          "predicates": {
+            "minecraft:enchantments": [
+              {
+                "enchantments": "boom:sonic_boom"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "boom:trigger_right_click_cooldown"
+  }
+}

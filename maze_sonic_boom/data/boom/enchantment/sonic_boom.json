@@ -1,0 +1,42 @@
+{
+  "description": {
+    "text": "Sonic Boom",
+    "color": "dark_aqua"
+  },
+  "supported_items": [
+    "minecraft:mace",
+    "minecraft:enchanted_book"
+  ],
+  "primary_items": [
+    "minecraft:mace",
+    "minecraft:enchanted_book"
+  ],
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 8,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "boom:sonic_knockback",
+        "attribute": "minecraft:attack_knockback",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 3.0,
+          "per_level_above_first": 0.0
+        },
+        "operation": "add_value"
+      }
+    ]
+  }
+}

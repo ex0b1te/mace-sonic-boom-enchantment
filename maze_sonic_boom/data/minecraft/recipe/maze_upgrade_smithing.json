@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": [
+    "minecraft:mace"
+  ],
+  "addition": [
+    "minecraft:netherite_ingot"
+  ],
+  "template": [
+    "minecraft:netherite_upgrade_smithing_template"
+  ],
+  "result": {
+    "id": "mace",
+    "components": {
+      "minecraft:lore": [
+        {
+          "text": "Sonic Boom Rdy!",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_name": {
+        "text": "Reinforced Mace",
+        "color": "aqua",
+        "italic": false
+      },
+      "minecraft:consumable": {
+        "consume_seconds": 9999,
+        "animation": "none",
+        "has_consume_particles": false
+      },
+      "minecraft:damage_resistant": {
+        "types": "#minecraft:is_fire"
+      }
+    },
+    "count": 1
+  }
+}
